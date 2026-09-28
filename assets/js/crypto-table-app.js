@@ -377,19 +377,35 @@
     }
 
     function populateInsightList(selector, items, positive, currencyValues) {
+        var $list = $(selector);
+        $list.empty();
+
         if (!items.length) {
-            $(selector).html('<li class="list-group-item">No data available.</li>');
+            $('<li/>', {
+                'class': 'list-group-item',
+                text: 'No data available.'
+            }).appendTo($list);
             return;
         }
 
-        var html = [];
         $.each(items, function (index, item) {
-            html.push('<li class="list-group-item">');
-            html.push('<span><strong>' + escapeHtml(item.name) + '</strong> <span class="asset-symbol">' + escapeHtml(item.symbol) + '</span></span>');
-            html.push('<span class="' + (positive ? 'change-positive' : 'change-negative') + '">' + (currencyValues ? formatCurrency(item.value) : formatPercentText(item.value)) + '</span>');
-            html.push('</li>');
+            var $label = $('<span/>');
+            $('<strong/>').text(item.name || '').appendTo($label);
+            $('<span/>', {
+                'class': 'asset-symbol',
+                text: item.symbol || ''
+            }).appendTo($label);
+
+            $('<li/>', {
+                'class': 'list-group-item'
+            })
+                .append($label)
+                .append($('<span/>', {
+                    'class': positive ? 'change-positive' : 'change-negative',
+                    text: currencyValues ? formatCurrency(item.value) : formatPercentText(item.value)
+                }))
+                .appendTo($list);
         });
-        $(selector).html(html.join(''));
     }
 
     function renderTable() {
