@@ -342,7 +342,7 @@
         var statusClass = 'status-live';
         if (statusText === 'fresh-cache') {
             statusClass = 'status-fresh-cache';
-        } else if (statusText === 'stale-cache') {
+        } else if (statusText === 'stale-cache' || statusText === 'seed-data') {
             statusClass = 'status-stale-cache';
         }
 
