@@ -1,0 +1,326 @@
+body.crypto-app {
+    background: #f5f7fb;
+    color: #1f2933;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.crypto-shell {
+    padding: 24px 15px 40px;
+}
+
+.crypto-hero {
+    background: linear-gradient(135deg, #0f172a, #1d4ed8);
+    border-radius: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+    padding: 28px;
+}
+
+.crypto-eyebrow {
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 12px;
+    letter-spacing: 0.16em;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.crypto-hero h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0 0 10px;
+}
+
+.crypto-subtitle {
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 16px;
+    margin: 0;
+    max-width: 720px;
+}
+
+.crypto-status-panel {
+    background: rgba(15, 23, 42, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    padding: 16px 18px;
+}
+
+.status-row {
+    margin: 10px 0 0;
+}
+
+.crypto-toolbar,
+.metric-card,
+.insight-card,
+.table-panel {
+    border: 0;
+    border-radius: 18px;
+    box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
+}
+
+.crypto-toolbar .panel-body,
+.metric-card .panel-body,
+.table-panel .panel-body {
+    padding: 20px;
+}
+
+.toolbar-row label {
+    color: #52606d;
+    display: block;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.toolbar-actions {
+    align-items: flex-end;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 24px;
+}
+
+.metric-label {
+    color: #52606d;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.metric-card h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.insight-grid {
+    margin-bottom: 10px;
+}
+
+.insight-card .panel-heading,
+.table-panel .panel-heading {
+    background: #fff;
+    border: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.insight-card .list-group-item {
+    align-items: center;
+    border-left: 0;
+    border-right: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.insight-card .list-group-item:first-child {
+    border-top: 0;
+}
+
+.table-heading {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.table-heading-copy {
+    color: #7b8794;
+    font-size: 13px;
+    margin: 4px 0 0;
+}
+
+.table-heading-meta {
+    color: #7b8794;
+    font-size: 13px;
+}
+
+.separator {
+    margin: 0 6px;
+}
+
+.bootstrap-table .fixed-table-toolbar {
+    margin-bottom: 12px;
+}
+
+.bootstrap-table .search {
+    width: 100%;
+}
+
+.bootstrap-table .search input {
+    border-radius: 10px;
+    height: 40px;
+}
+
+.fixed-table-container {
+    border: 0 !important;
+}
+
+.fixed-table-body {
+    border-radius: 14px;
+}
+
+.table > thead > tr > th {
+    border-bottom: 0;
+    color: #52606d;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    padding: 14px 12px;
+    text-transform: uppercase;
+}
+
+.table > tbody > tr > td {
+    border-top: 1px solid #e4e7eb;
+    padding: 14px 12px;
+    vertical-align: middle;
+}
+
+.asset-cell {
+    align-items: center;
+    display: flex;
+    gap: 12px;
+    min-width: 180px;
+}
+
+.asset-icon {
+    background: #fff;
+    border: 1px solid #d9e2ec;
+    border-radius: 50%;
+    height: 32px;
+    object-fit: cover;
+    width: 32px;
+}
+
+.asset-fallback {
+    align-items: center;
+    background: #dbeafe;
+    border-radius: 50%;
+    color: #1d4ed8;
+    display: inline-flex;
+    font-size: 12px;
+    font-weight: 700;
+    height: 32px;
+    justify-content: center;
+    width: 32px;
+}
+
+.asset-name {
+    font-weight: 600;
+}
+
+.asset-symbol {
+    color: #7b8794;
+    display: block;
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.sparkline {
+    height: 34px;
+    width: 120px;
+}
+
+.sparkline polyline {
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2;
+}
+
+.trend-up polyline {
+    stroke: #16a34a;
+}
+
+.trend-down polyline {
+    stroke: #dc2626;
+}
+
+.trend-flat polyline {
+    stroke: #64748b;
+}
+
+.change-positive {
+    color: #15803d;
+    font-weight: 600;
+}
+
+.change-negative {
+    color: #b91c1c;
+    font-weight: 600;
+}
+
+.watchlist-toggle {
+    background: transparent;
+    border: 0;
+    color: #cbd2d9;
+    font-size: 18px;
+    padding: 0;
+}
+
+.watchlist-toggle.active {
+    color: #f59e0b;
+}
+
+.status-live,
+.status-fresh-cache {
+    background: #15803d;
+}
+
+.status-stale-cache {
+    background: #b45309;
+}
+
+.status-error {
+    background: #b91c1c;
+}
+
+.supply-meta,
+.updated-meta,
+.link-meta {
+    color: #7b8794;
+    font-size: 12px;
+}
+
+@media (max-width: 991px) {
+    .toolbar-actions {
+        justify-content: flex-start;
+        margin-top: 16px;
+    }
+
+    .table-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 767px) {
+    .crypto-shell {
+        padding: 16px 10px 32px;
+    }
+
+    .crypto-hero {
+        border-radius: 16px;
+        padding: 22px 18px;
+    }
+
+    .crypto-hero h1 {
+        font-size: 28px;
+    }
+
+    .toolbar-row > [class*="col-"] {
+        margin-bottom: 16px;
+    }
+
+    .toolbar-actions {
+        flex-wrap: wrap;
+    }
+
+    .metric-card h3 {
+        font-size: 24px;
+    }
+
+    .sparkline {
+        width: 100px;
+    }
+}
